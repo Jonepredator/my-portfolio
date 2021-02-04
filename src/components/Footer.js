@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components/macro';
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import Weather from './Weather';
 
 
 const Section = styled.section`
@@ -40,12 +41,14 @@ const SocialIcons = styled.div`
    bottom: 0;
    right: 0;
    flex: auto;
+   border-right: 1px solid #fff;
 
     @media screen and (max-width: 768px) {
       padding: .5rem 0 1rem 0;
       margin-bottom: 1rem;
       width: 100%;
       border-right: 0;
+      border-bottom: 1px solid #fff;
     }
 `;
 
@@ -102,9 +105,8 @@ const Footer = () => {
                      <LinkedIn />
                   </a>
                </SocialIcons>
-
+               <Weather />
             </FooterTop>
-
          </Container>
       </Section>
    );
