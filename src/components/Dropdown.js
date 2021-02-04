@@ -62,7 +62,6 @@ const DropdownLink = styled(Link)`
     }
 `;
 const BtnWrap = styled.div`
-/* kanske inte lägger till detta för jag gillar att den drar/ligger åt vänster */
     display: flex;
     justify-content: center;
 `;

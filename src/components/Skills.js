@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageOne from '../images/skills-3.jpg';
+import ImageOne from '../images/skills-1.jpg';
 
 const Section = styled.section`
     width: 100%;
