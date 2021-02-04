@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#4A5568;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{display:none;}
+	.st3{display:inline;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Lager_1">
+	<g>
+		<title>background</title>
+		<rect id="canvas_background" x="-1" y="-1" class="st0" width="582" height="402"/>
+	</g>
+	<title>Layer 1</title>
+	<line class="st1" x1="4" y1="6" x2="18.3" y2="6"/>
+	<line class="st1" x1="11.6" y1="12" x2="20" y2="12"/>
+	<line class="st1" x1="5.6" y1="18" x2="16.5" y2="18"/>
+</g>
+<g id="Lager_2" class="st2">
+	<line class="st3" x1="3.5" y1="6" x2="18.3" y2="6.1"/>
+	<line class="st3" x1="11.2" y1="12" x2="20.8" y2="12"/>
+	<line class="st3" x1="5.5" y1="18" x2="19.6" y2="18"/>
+</g>
+</svg>
