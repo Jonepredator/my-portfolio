@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components/macro';
-import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
 import Weather from './Weather';
-
 
 const Section = styled.section`
     background: #000d1a;
@@ -65,23 +64,18 @@ const Icons = css`
 `;
 
 const Instagram = styled(FaInstagram)`
-    ${Icons}
+   ${Icons}
     
 `;
 const Github = styled(FaGithub)`
-    ${Icons}
+   ${Icons}
 `;
 const LinkedIn = styled(FaLinkedinIn)`
-    ${Icons}
-
+   ${Icons}
 `;
-
-// const FooterBottom = styled.div`
-//     padding: .5rem 0rem;
-
-//     @media screen and (max-width: 768px) {
-//     }
-// `;
+const MailTo = styled(FaEnvelope)`
+   ${Icons}
+`;
 
 const Footer = () => {
    return (
@@ -103,6 +97,10 @@ const Footer = () => {
                   <a href='//www.linkedin.com/in/juan-fuenzalida-2b90321b6/' rel='noopener 
                         noreferrer' target='_blank' data-aos='fade-right' data-aos-duration='2000' data-aos-anchor-placement='top-bottom' data-aos-delay='800'>
                      <LinkedIn />
+                  </a>
+                  <a href='mailto:jone.fuenzalida@gmail.com' rel='noopener 
+                        noreferrer' target='_blank' data-aos='fade-right' data-aos-duration='2000' data-aos-anchor-placement='top-bottom' data-aos-delay='1100'>
+                     <MailTo />
                   </a>
                </SocialIcons>
                <Weather />

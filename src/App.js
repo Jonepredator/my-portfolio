@@ -12,9 +12,20 @@ import 'aos/dist/aos.css';
 import Projects from './pages/Projects';
 import Knowledge from './pages/Knowledge';
 import ScrollToTop from './components/ScrollToTop';
+import mailgo from "mailgo";
+
+const mailgoConfig: MailgoConfig = {
+   showFooter: false,
+};
 
 
 function App() {
+
+   useEffect(() => {
+      mailgo(mailgoConfig);
+   }, []);
+
+
    const [isOpen, setIsopen] = useState(false);
 
    const toggle = () => {
@@ -24,6 +35,8 @@ function App() {
    useEffect(() => {
       Aos.init({});
    }, []);
+
+
 
 
    return (

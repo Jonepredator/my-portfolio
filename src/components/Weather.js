@@ -99,7 +99,13 @@ const Weather = () => {
             Want to know the weather?
          </SmallHeader>
          <Form>
-            <InputCity type='text' name='city' placeholder='city here...' onChange={e => handleChange(e)} />
+            <InputCity
+               type='text'
+               name='city'
+               placeholder='city here...'
+               onChange={handleChange}
+               value={form.city}
+            />
             <SearchBtn
                onClick={(e) => weatherData(e)}>
                Search
