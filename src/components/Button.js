@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-export const Button = styled(Link)`
+export const Button = styled(NavLink)`
     background: ${({ primary }) => (primary ? '#E9B872' : 'transparent')};
     white-space: nowrap;
     outline: none;
@@ -21,6 +21,10 @@ export const Button = styled(Link)`
     letter-spacing: 0.05rem;
     
     &:hover {
-        border: 1px solid #fff;
+      border: 1px solid #fff;
+    }
+
+    &.active {
+      border: 1px solid #fff;
     }
 `;

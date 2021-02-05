@@ -89,8 +89,8 @@ const InfoLink = styled.div`
     }
 
     a:visited {
-        text-decoration: none;
-        color: #000d1a;
+        text-decoration: none !important;
+        color: #000d1a !important;
     }
 
     p { 

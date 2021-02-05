@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components/macro';
-import { Link, useLocation } from 'react-router-dom';
-import { menuData } from '../data/MenuData';
+import { NavLink, useLocation, Link } from 'react-router-dom';
 import { Button } from './Button';
 import { animateScroll as scroll } from 'react-scroll';
 import Bars from '../images/bars-1.svg';
@@ -16,11 +15,12 @@ const Nav = styled.nav`
     width: 100%;
 `;
 
-const NavLink = css`
+const NavLinks = css`
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0 1rem .3rem;
+    padding: 0 .2rem .3rem;
+    margin: 0 .8rem;
     height: 100%;
     cursor: pointer;
     text-decoration: none;
@@ -31,10 +31,14 @@ const NavLink = css`
         transition: all 0.1s ease-in-out;
         border-bottom: 3px solid #E9B872;
     }
+
+    &.active {
+      border-bottom: 3px solid #E9B872;
+    }
 `;
 
 const Logo = styled(Link)`
-    ${NavLink}
+    ${NavLinks}
     font-style: italic;
     font-weight: bold;
     letter-spacing: .2rem;
@@ -62,6 +66,7 @@ const MenuBars = styled.i`
         top: 0;
         right: 0;
         transform: translate(-50%, 25%);
+
     }
 `;
 
@@ -75,11 +80,14 @@ const NavMenu = styled.div`
     }
 `;
 
-const NavMenuLinks = styled(Link)`
-    ${NavLink}
+const NavMenuLinks = styled(NavLink)`
+    ${NavLinks}
 
     &:hover {
         transform: translateY(.1)
+    }
+    &.active {
+      border-bottom: 3px solid #E9B872;
     }
 `;
 
@@ -126,21 +134,25 @@ const Navbar = ({ toggle }) => {
       scroll.scrollToTop();
    };
 
-
-
    return (
       <Nav style={style}>
          <Logo onClick={toggleHome} to='/'>JUAN FUENZALIDA</Logo>
          <MenuBars onClick={toggle} />
          <NavMenu>
-            {menuData.map((item, index) => (
-               <NavMenuLinks to={item.link} key={index}>
-                  {item.title}
+
+            <NavMenuLinks to='/about' activeClassName='active' spy='true' >
+               About
                </NavMenuLinks>
-            ))}
+            <NavMenuLinks to='/knowledge' activeClassName='active' spy='true' >
+               Knowledge
+               </NavMenuLinks>
+            <NavMenuLinks to='/projects' activeClassName='active' spy='true' >
+               Projects
+               </NavMenuLinks>
+
          </NavMenu>
          <NavBtn>
-            <Button to='/contact'>Contact Me</Button>
+            <Button to='/contact' spy='true' >Contact Me</Button>
          </NavBtn>
       </Nav>
    );
