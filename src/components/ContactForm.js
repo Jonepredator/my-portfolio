@@ -41,7 +41,7 @@ export const Icon = styled(Link)`
     font-size: 24px;
 
     @media screen and (max-width: 768px) {
-        margin-left: 24px;
+        margin-left: 200px;
         margin-top: 70px;
     }
 `;
@@ -52,8 +52,8 @@ export const FormContent = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
-        padding: 150px 10px 10px 10px;
+    @media screen and (max-width: 1450px) {
+        padding: 10px 10px 10px 10px;
     }
 `;
 
@@ -65,13 +65,9 @@ export const Form = styled.form`
     z-index: 1;
     display: grid;
     margin: 0 auto;
-    padding: 40px 32px;
+    padding: 20px 10px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
-    @media screen and (max-width: 768px) {
-        padding: 20px 20px;
-    }
 
     @media screen and (max-width: 600px) {
         height: 500px;
@@ -81,14 +77,14 @@ export const Form = styled.form`
 `;
 
 export const FormH1 = styled.h1`
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     letter-spacing: .05rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1450px) {
         font-size: 14px;
         margin-bottom: 20px;
     }
@@ -172,8 +168,6 @@ export const Text = styled.span`
     color: #fff;
     font-size: 14px;
 `;
-
-
 
 const ContactForm = () => {
    const [data, setData] = useState({

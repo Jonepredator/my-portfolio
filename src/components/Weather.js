@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import DisplayWeather from './DisplayWeather';
 import styled from 'styled-components';
 
-
 const WeatherContainer = styled.div`
    flex: flex-end;
    padding: 0 0 1rem .8rem;
@@ -15,7 +14,6 @@ const WeatherContainer = styled.div`
 const SmallHeader = styled.span`
    letter-spacing: .1rem;
    font-size: .8rem;
-   
 `;
 
 const Form = styled.form`
@@ -74,12 +72,11 @@ const Weather = () => {
          alert('ADD values');
       } else {
          const data = await fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=${form.city}&appid=${API_KEY}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${form.city}&appid=${API_KEY}`
          )
             .then((res) => res.json())
             .then(data => data);
          setWeather({ data: data });
-         console.log(data);
       };
    };
 
@@ -100,6 +97,7 @@ const Weather = () => {
          </SmallHeader>
          <Form>
             <InputCity
+               label='City'
                type='text'
                name='city'
                placeholder='city here...'

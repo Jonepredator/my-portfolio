@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { IoMdArrowRoundForward } from 'react-icons/io';
-import ProjectOne from '../images/hsida-1.jpg';
-import ProjectTwo from '../images/hsida-2.jpg';
+import ProjectOne from '../images/hsida-1.png';
+import ProjectTwo from '../images/hsida-2.png';
 
 const Section = styled.section`
     width: 100%;
@@ -60,6 +60,7 @@ const InfoWrap = styled.div`
         min-height: 350px;
     }
 `;
+
 const Image = styled.img`
     width: 100%;
     height: 100%;

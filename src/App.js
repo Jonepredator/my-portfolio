@@ -18,13 +18,11 @@ const mailgoConfig: MailgoConfig = {
    showFooter: false,
 };
 
-
 function App() {
 
    useEffect(() => {
       mailgo(mailgoConfig);
    }, []);
-
 
    const [isOpen, setIsopen] = useState(false);
 
@@ -35,9 +33,6 @@ function App() {
    useEffect(() => {
       Aos.init({});
    }, []);
-
-
-
 
    return (
       <>

@@ -62,7 +62,6 @@ const MenuBars = styled.i`
         top: 0;
         right: 0;
         transform: translate(-50%, 25%);
-
     }
 `;
 

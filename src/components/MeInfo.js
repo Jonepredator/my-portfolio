@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageOne from '../images/juan-face-bw.jpg';
+import ImageOne from '../images/juan-2.jpg';
 
 const Section = styled.section`
     background: #2274a5;
@@ -24,7 +24,7 @@ const Wrap = styled.div`
 const ColumnLeft = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin: 0px --15px;
+    margin: 0px 15px;
     justify-content: flex-start;
     padding: 1rem;
 `;
@@ -84,8 +84,8 @@ const MeInfo = () => {
                <ColumnLeft>
                   <Content data-aos='fade-right' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      <h1>Juan Fuenzalida</h1>
-                     <p>Born in the woods of Småland, Sweden currently living in Stockholm. Raised by 2 great hippies to become the dude i am today.</p>
-                     <p>Studying to become a front-end developer and explore what this horizon has to offer.</p>
+                     <p>Born in the woods of Småland, Sweden, currently living in Stockholm. I come from a background of art with dancing, drawing, painting and tattooing. But i wanted to explore something new.</p>
+                     <p>Soooo... I am now studying to become a front-end developer at KYH-Stockholm</p>
                   </Content>
                </ColumnLeft>
                <ColumnRight>

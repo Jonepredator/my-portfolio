@@ -32,6 +32,7 @@ const Icon = styled.div`
 const CloseIcon = styled(FaTimes)`
     color: #fff;
 `;
+
 const DropdownWrapper = styled.div``;
 
 const DropdownMenu = styled.div`

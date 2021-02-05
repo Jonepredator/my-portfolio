@@ -20,7 +20,6 @@ export const Button = styled(Link)`
     font-size: 1rem;
     letter-spacing: 0.05rem;
     
-    
     &:hover {
         border: 1px solid #fff;
     }

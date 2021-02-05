@@ -49,11 +49,10 @@ const WeatherDescription = styled.span`
    }
 `;
 
-
 function DisplayWeather(props) {
    const { data } = props;
 
-   const ICON_URL = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+   const ICON_URL = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
    return (
       <MainCard>

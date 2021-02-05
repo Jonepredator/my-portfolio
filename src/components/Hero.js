@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import Video from '../videos/looop2.mp4';
+import Video from '../videos/swoosh-2.mp4';
 
 const HeroSection = styled.section`
     height: 100vh;
     max-height: 1100px;
     position: relative;
     overflow: hidden;
+    background: black;
 `;
 
 const HeroWrapper = styled.div`
@@ -17,6 +18,7 @@ const HeroWrapper = styled.div`
     align-items: center;
     overflow: hidden;
     position: relative;
+    background: black;
 `;
 
 const HeroBg = styled.video`
