@@ -84,7 +84,7 @@ const Skills = () => {
                data-aos-anchor-placement='top-bottom'>
                <h1>Knowledge</h1>
                <p>This data is probably not that accurate but it is how my brain thinks it is.</p>
-               <p>I am still learning new things everyday and my pursue for more knowledge is never ending.</p>
+               <p>I am still learning new things everyday and my pursuit for more knowledge is not going to stop any time soon.</p>
             </ColumnLeft>
             <ColumnRight reverse='false'>
                <img src={ImageOne} alt='home'

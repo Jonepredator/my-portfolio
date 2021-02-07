@@ -89,8 +89,8 @@ const InfoLink = styled.div`
     }
 
     a:visited {
-        text-decoration: none !important;
-        color: #000d1a !important;
+        text-decoration: none;
+        color: #000d1a;
     }
 
     p { 
@@ -101,6 +101,10 @@ const InfoLink = styled.div`
             transform: scale(1.1);
             transition: all 0.3s ease-in-out;
             border-bottom: 2px solid #E9B872;
+        }
+        p:visited {
+        text-decoration: none;
+        color: #000d1a;
         }
     }
 `;
