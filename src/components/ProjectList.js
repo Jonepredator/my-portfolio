@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { IoMdArrowRoundForward } from 'react-icons/io';
 import ProjectOne from '../images/hpage-1.jpg';
 import ProjectTwo from '../images/hpage-2.jpg';
 import ProjectThree from '../images/hpage-3.jpg';
@@ -122,10 +121,6 @@ const InfoLink = styled.div`
     }
 `;
 
-// const Arrow = styled(IoMdArrowRoundForward)`
-//     margin-left: 10px;
-// `;
-
 const ProjectList = () => {
    return (
       <Section>
@@ -147,7 +142,6 @@ const ProjectList = () => {
                                 noreferrer' target='_blank'>
                         <p >Visit page</p>
                      </a>
-                     {/* <Arrow /> */}
                   </InfoLink>
                </InfoWrap>
                <InfoWrap>
