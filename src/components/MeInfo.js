@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import ImageOne from '../images/juan-2.jpg';
 
 const Section = styled.section`
-    background: #2274a5;
+    /* background: #2274a5; */
+    background: #1F6C56;
     padding: 12rem 0rem;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,10 @@ const MeInfo = () => {
          <Container>
             <Wrap>
                <ColumnLeft>
-                  <Content data-aos='fade-right' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
+                  <Content
+                     data-aos='fade-right'
+                     data-aos-duration='2000'
+                     data-aos-anchor-placement='top-bottom'>
                      <h1>Juan Fuenzalida</h1>
                      <p>Born in the woods of Småland, Sweden, currently living in Stockholm. I come from a background of art with dancing, drawing, painting and tattooing. But i wanted to explore something new.</p>
                      <p>Soooo... I am now studying to become a front-end developer at KYH-Stockholm</p>

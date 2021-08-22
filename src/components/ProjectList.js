@@ -7,6 +7,7 @@ import ProjectThree from '../images/hpage-3.jpg';
 import ProjectFour from '../images/hpage-4.jpg';
 
 const Section = styled.section`
+background-color: #FABD38;
     width: 100%;
     height: 100%;
     padding: 10rem calc((100vw - 1300px) /2);
@@ -74,6 +75,7 @@ const Image = styled.img`
     display: inline-block;
     overflow: hidden;
     border-radius: 5px;
+    box-shadow: 4px 12px 13px 2px;
     /* border: 1px solid #000; */
 `;
 
@@ -97,14 +99,21 @@ const InfoLink = styled.div`
         color: #000d1a;
     }
 
-    p { 
-        font-weight: 500;
-        font-size: .9rem;
+    p {
+      border: 1px solid transparent;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-weight: 500;
+      font-size: .9rem;
 
         &:hover {
-            transform: scale(1.1);
+            font-weight: bold;
+            border: 1px solid #fff;
+            box-shadow: 1px 4px 7px 2px;
+    
+            /* transform: scale(1.1);
             transition: all 0.3s ease-in-out;
-            border-bottom: 2px solid #E9B872;
+            border-bottom: 2px solid #E9B872; */
         }
         p:visited {
         text-decoration: none;
@@ -113,9 +122,9 @@ const InfoLink = styled.div`
     }
 `;
 
-const Arrow = styled(IoMdArrowRoundForward)`
-    margin-left: 10px;
-`;
+// const Arrow = styled(IoMdArrowRoundForward)`
+//     margin-left: 10px;
+// `;
 
 const ProjectList = () => {
    return (
@@ -131,14 +140,14 @@ const ProjectList = () => {
                      alt='tattoo-web-page'
                   />
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
-                     One of my first projects made with html, css and javascript.
+                     One of my first projects made with Html, CSS and Javascript.
                   </h2>
                   <InfoLink data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      <a href='//jonepredator.github.io/hsida/' rel='noopener 
                                 noreferrer' target='_blank'>
-                        <p >View Details</p>
+                        <p >Visit page</p>
                      </a>
-                     <Arrow />
+                     {/* <Arrow /> */}
                   </InfoLink>
                </InfoWrap>
                <InfoWrap>
@@ -157,33 +166,14 @@ const ProjectList = () => {
                   <InfoLink data-aos="fade-down-left" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
                      <a href='//glistening-popcorn.surge.sh/' rel='noopener 
                                 noreferrer' target='_blank'>
-                        <p>View Details</p>
+                        <p>Visit page</p>
                      </a>
-                     <Arrow />
+                     {/* <Arrow /> */}
                   </InfoLink>
                </InfoWrap>
             </InfoRow>
+
             <InfoRow>
-               <InfoWrap>
-                  <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
-                     src={ProjectThree}
-                     alt='covid-tracker'
-                  />
-                  <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
-                     A covid-19 tracker of Swedish regions and countries worldwide.
-                     <br />
-                     Using firebase for auth and RESTAPI for fetching data.
-                     <br />
-                     Built in React.
-                  </h2>
-                  <InfoLink data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
-                     <a href='//covidtracker-kyh.netlify.app/' rel='noopener 
-                                noreferrer' target='_blank'>
-                        <p >View Details</p>
-                     </a>
-                     <Arrow />
-                  </InfoLink>
-               </InfoWrap>
                <InfoWrap>
                   <Image data-aos='fade-up-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectFour} alt='home'
@@ -198,11 +188,32 @@ const ProjectList = () => {
                      A chat-app created with React and Firebase.
                   </h2>
                   <InfoLink data-aos="fade-down-left" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
+                     <a href='//loquacious-app.netlify.app/' rel='noopener 
+                                noreferrer' target='_blank'>
+                        <p>Visit page</p>
+                     </a>
+                     {/* <Arrow /> */}
+                  </InfoLink>
+               </InfoWrap>
+
+               <InfoWrap>
+                  <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                     src={ProjectThree}
+                     alt='covid-tracker'
+                  />
+                  <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
+                     A covid-19 tracker of Swedish regions and the World.
+                     <br />
+                     Using Firebase and RESTAPI.
+                     <br />
+                     Built in React.
+                  </h2>
+                  <InfoLink data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      <a href='//covidtracker-kyh.netlify.app/' rel='noopener 
                                 noreferrer' target='_blank'>
-                        <p>View Details</p>
+                        <p >Visit page</p>
                      </a>
-                     <Arrow />
+                     {/* <Arrow /> */}
                   </InfoLink>
                </InfoWrap>
             </InfoRow>

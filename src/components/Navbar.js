@@ -126,7 +126,7 @@ const Navbar = ({ toggle }) => {
    }, []);
 
    let style = {
-      backgroundColor: navbar || location.pathname !== '/' ? '#2274a5' : 'transparent',
+      backgroundColor: navbar || location.pathname !== '/' ? '#1F6C56' : 'transparent',
       transition: '1.5s'
    };
 
@@ -142,13 +142,13 @@ const Navbar = ({ toggle }) => {
 
             <NavMenuLinks to='/about' activeClassName='active' spy='true' >
                About
-               </NavMenuLinks>
+            </NavMenuLinks>
             <NavMenuLinks to='/knowledge' activeClassName='active' spy='true' >
                Knowledge
-               </NavMenuLinks>
+            </NavMenuLinks>
             <NavMenuLinks to='/projects' activeClassName='active' spy='true' >
                Projects
-               </NavMenuLinks>
+            </NavMenuLinks>
 
          </NavMenu>
          <NavBtn>
