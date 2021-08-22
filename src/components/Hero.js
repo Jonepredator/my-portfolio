@@ -40,17 +40,20 @@ const HeroContent = styled.div`
     color: #fff;
 
     h1 {
-        font-size: clamp(1rem, 8vw, 2rem);
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-        text-align: left;
-        margin-bottom: 0.8rem;
+      font-size: clamp(1rem, 8vw, 2rem);
+      font-weight: 400;
+      text-transform: uppercase;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+      text-align: left;
+      margin-bottom: 0.8rem;
     }
 
     p {
-        margin-bottom: 1.2rem;
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 1.2rem;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+    h3 {
+      word-spacing: 8px;
     }
 `;
 
@@ -64,6 +67,8 @@ const Hero = () => {
             <HeroContent>
                <h1 data-aos='fade-down' data-aos-duration='1600' data-aos-delay='500' >Front-End Developer</h1>
                <p data-aos='fade-right' data-aos-duration='1600' data-aos-delay='1500' >in the making</p>
+               <br />
+               <h3 data-aos='fade-right' data-aos-duration='1600' data-aos-delay='2000' >Currently searching for an internship from mid November to April</h3>
             </HeroContent>
          </HeroWrapper>
       </HeroSection>

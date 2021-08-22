@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { IoMdArrowRoundForward } from 'react-icons/io';
-import ProjectOne from '../images/hsida-1.png';
-import ProjectTwo from '../images/hsida-2.png';
+import ProjectOne from '../images/hpage-1.jpg';
+import ProjectTwo from '../images/hpage-2.jpg';
+import ProjectThree from '../images/hpage-3.jpg';
+import ProjectFour from '../images/hpage-4.jpg';
 
 const Section = styled.section`
     width: 100%;
@@ -71,6 +73,8 @@ const Image = styled.img`
     position: relative;
     display: inline-block;
     overflow: hidden;
+    border-radius: 5px;
+    /* border: 1px solid #000; */
 `;
 
 const InfoLink = styled.div`
@@ -124,11 +128,11 @@ const ProjectList = () => {
                <InfoWrap>
                   <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectOne}
-                     alt='home'
+                     alt='tattoo-web-page'
                   />
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      One of my first projects made with html, css and javascript.
-                            </h2>
+                  </h2>
                   <InfoLink data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      <a href='//jonepredator.github.io/hsida/' rel='noopener 
                                 noreferrer' target='_blank'>
@@ -139,19 +143,62 @@ const ProjectList = () => {
                </InfoWrap>
                <InfoWrap>
                   <Image data-aos='fade-up-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
-                     src={ProjectTwo} alt='home'
+                     src={ProjectTwo} alt='movie-search-web-page'
                      css={`
-                            margin-top: 120px;
-                            @media screen and (max-width: 768px) {
-                                margin-top: 0px;
-                            }
-                        `}
+                         margin-top: 120px;
+                         @media screen and (max-width: 768px) {
+                             margin-top: 0px;
+                         }
+                     `}
                   />
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
                      My first Project in React. Movie searcher with API from TMDB.
-                            </h2>
+                  </h2>
                   <InfoLink data-aos="fade-down-left" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
                      <a href='//glistening-popcorn.surge.sh/' rel='noopener 
+                                noreferrer' target='_blank'>
+                        <p>View Details</p>
+                     </a>
+                     <Arrow />
+                  </InfoLink>
+               </InfoWrap>
+            </InfoRow>
+            <InfoRow>
+               <InfoWrap>
+                  <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                     src={ProjectThree}
+                     alt='covid-tracker'
+                  />
+                  <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
+                     A covid-19 tracker of Swedish regions and countries worldwide.
+                     <br />
+                     Using firebase for auth and RESTAPI for fetching data.
+                     <br />
+                     Built in React.
+                  </h2>
+                  <InfoLink data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
+                     <a href='//covidtracker-kyh.netlify.app/' rel='noopener 
+                                noreferrer' target='_blank'>
+                        <p >View Details</p>
+                     </a>
+                     <Arrow />
+                  </InfoLink>
+               </InfoWrap>
+               <InfoWrap>
+                  <Image data-aos='fade-up-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                     src={ProjectFour} alt='home'
+                     css={`
+                      margin-top: 120px;
+                      @media screen and (max-width: 768px) {
+                          margin-top: 0px;
+                      }
+                  `}
+                  />
+                  <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
+                     A chat-app created with React and Firebase.
+                  </h2>
+                  <InfoLink data-aos="fade-down-left" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
+                     <a href='//covidtracker-kyh.netlify.app/' rel='noopener 
                                 noreferrer' target='_blank'>
                         <p>View Details</p>
                      </a>
