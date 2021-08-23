@@ -54,11 +54,11 @@ const SocialIcons = styled.div`
 const Icons = css`
     font-size: clamp(2rem, 4vw, 3rem);
     margin-right: 1.7rem;
-    color: #2274a5;
+    color: #1F6C56;
 
     &:hover {
         transform: scale(1.15);
-        color: #E9B872;
+        color: #FABD38;
         transition: all 0.3s ease-in-out;
     }
 `;

@@ -18,7 +18,7 @@ export const Container = styled.div`
     right: 0;
     top: 0;
     overflow: hidden;
-    background: whitesmoke;
+    background: #181818;
 `;
 
 export const FormWrap = styled.div`
@@ -138,11 +138,11 @@ export const Textarea = styled.textarea`
 `;
 
 export const FormButton = styled.button`
-    background: #45a3d9;
+    background: #1F6C56;
     padding: 16px 0;
     border: none;
     border-radius: 4px;
-    color: #010606;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: .2rem;
@@ -150,15 +150,22 @@ export const FormButton = styled.button`
 
     &:hover {
         transition: all 0.3s ease-in-out;
-        background: #E9B872;
+        font-size: 20px;
+        background: #FABD38;
         color: #010606;
         border: none;
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 
     @media screen and (max-width: 768px) {
         padding: 10px 0;
         font-size: 16px;
+        
+        &:hover {
+         transition: all 0.3s ease-in-out;
+        transform: none;
+        font-size: 16px;
+        }
     }
 `;
 

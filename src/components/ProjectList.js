@@ -37,7 +37,7 @@ const Heading = styled.div`
 const InfoRow = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 1rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -50,7 +50,7 @@ const InfoWrap = styled.div`
     height: 100%;
 
     h2 {
-        margin-bottom: 1rem;
+        margin-bottom: .3rem;
         font-weight: 500;
         line-height: 1.5;
         font-size: 1.1rem;
@@ -58,7 +58,7 @@ const InfoWrap = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        margin-bottom: 1rem;
+        margin-bottom: .3rem;
         min-height: 350px;
     }
 `;
@@ -75,7 +75,7 @@ const Image = styled.img`
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 4px 12px 13px 2px;
-    /* border: 1px solid #000; */
+    border: 2px solid #000;
 `;
 
 const InfoLink = styled.div`
@@ -128,7 +128,13 @@ const ProjectList = () => {
             <Heading>
                <h1 data-aos='fade-right' data-aos-duration='1500' data-aos-anchor-placement='top-bottom'>Some of my projects</h1>
             </Heading>
-            <InfoRow>
+            <InfoRow
+               css={`
+               @media screen and (max-width: 768px) {
+                  padding: 1rem 0rem 0rem 0rem;
+               }
+           `}
+            >
                <InfoWrap>
                   <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectOne}
@@ -167,16 +173,18 @@ const ProjectList = () => {
                </InfoWrap>
             </InfoRow>
 
-            <InfoRow>
+            <InfoRow
+               css={`
+               @media screen and (max-width: 768px) {
+                   margin-top: 0;
+                   padding: 0rem 0rem 1rem 0rem;
+               }
+           `}
+            >
                <InfoWrap>
                   <Image data-aos='fade-up-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectFour} alt='home'
-                     css={`
-                      margin-top: 120px;
-                      @media screen and (max-width: 768px) {
-                          margin-top: 0px;
-                      }
-                  `}
+
                   />
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
                      A chat-app created with React and Firebase.
@@ -194,6 +202,12 @@ const ProjectList = () => {
                   <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectThree}
                      alt='covid-tracker'
+                     css={`
+                      margin-top: 120px;
+                      @media screen and (max-width: 768px) {
+                          margin-top: 0;
+                      }
+                  `}
                   />
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      A covid-19 tracker of Swedish regions and the World.
