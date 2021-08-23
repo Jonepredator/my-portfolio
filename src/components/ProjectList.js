@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { VscGithub } from 'react-icons/vsc';
 import ProjectOne from '../images/hpage-1.jpg';
 import ProjectTwo from '../images/hpage-2.jpg';
 import ProjectThree from '../images/hpage-3.jpg';
@@ -75,18 +76,20 @@ const Image = styled.img`
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 4px 12px 13px 2px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
 `;
 
 const InfoLink = styled.div`
     display: flex;
     align-items: center;
+    justify-content: left;
     text-decoration: none;
     color: #000d1a;
-    width: 155px;
+    width: 100%;
     transition: 0.3s;
     list-style: none;
     letter-spacing: .05rem;
+    
 
     a {
         text-decoration: none;
@@ -99,15 +102,17 @@ const InfoLink = styled.div`
     }
 
     p {
-      border: 1px solid transparent;
+      border: 2px solid #fff;
+      max-height: 38px;
+      margin-left: 0;
+      margin-right: 1rem;
       border-radius: 6px;
       padding: 8px 16px;
       font-weight: 500;
       font-size: .9rem;
 
         &:hover {
-            font-weight: bold;
-            border: 1px solid #fff;
+            /* font-weight: bold; */
             box-shadow: 1px 4px 7px 2px;
     
             /* transform: scale(1.1);
@@ -119,6 +124,13 @@ const InfoLink = styled.div`
         color: #000d1a;
         }
     }
+`;
+
+const GitHub = styled(VscGithub)`
+   font-size: 1rem;
+   /* padding: 5px 3px; */
+   margin-left: .5rem;
+   color: #1F6C56;
 `;
 
 const ProjectList = () => {
@@ -136,7 +148,7 @@ const ProjectList = () => {
            `}
             >
                <InfoWrap>
-                  <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                  <Image data-aos="fade-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectOne}
                      alt='tattoo-web-page'
                   />
@@ -148,10 +160,16 @@ const ProjectList = () => {
                                 noreferrer' target='_blank'>
                         <p >Visit page</p>
                      </a>
+                     <a href='//github.com/Jonepredator/hsida/' rel='noopener 
+                                noreferrer' target='_blank'>
+                        <p>Visit
+                           <GitHub />
+                        </p>
+                     </a>
                   </InfoLink>
                </InfoWrap>
                <InfoWrap>
-                  <Image data-aos='fade-up-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                  <Image data-aos='fade-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectTwo} alt='movie-search-web-page'
                      css={`
                          margin-top: 120px;
@@ -168,7 +186,7 @@ const ProjectList = () => {
                                 noreferrer' target='_blank'>
                         <p>Visit page</p>
                      </a>
-                     {/* <Arrow /> */}
+
                   </InfoLink>
                </InfoWrap>
             </InfoRow>
@@ -182,8 +200,8 @@ const ProjectList = () => {
            `}
             >
                <InfoWrap>
-                  <Image data-aos='fade-up-left' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
-                     src={ProjectFour} alt='home'
+                  <Image data-aos='fade-right' data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                     src={ProjectFour} alt='chat-app'
 
                   />
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement="top-bottom">
@@ -194,12 +212,19 @@ const ProjectList = () => {
                                 noreferrer' target='_blank'>
                         <p>Visit page</p>
                      </a>
-                     {/* <Arrow /> */}
+
+                     <a href='//github.com/Jonepredator/react-friendly-messenger/' rel='noopener 
+                                noreferrer' target='_blank'>
+                        <p>Visit
+                           <GitHub />
+                        </p>
+                     </a>
+
                   </InfoLink>
                </InfoWrap>
 
                <InfoWrap>
-                  <Image data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
+                  <Image data-aos="fade-left" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'
                      src={ProjectThree}
                      alt='covid-tracker'
                      css={`
@@ -212,16 +237,20 @@ const ProjectList = () => {
                   <h2 data-aos="zoom-out" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      A covid-19 tracker of Swedish regions and the World.
                      <br />
-                     Using Firebase and RESTAPI.
-                     <br />
-                     Built in React.
+                     Built in React with Firebase and RESTAPI
                   </h2>
                   <InfoLink data-aos="fade-up-right" data-aos-duration='2000' data-aos-anchor-placement='top-bottom'>
                      <a href='//covidtracker-kyh.netlify.app/' rel='noopener 
                                 noreferrer' target='_blank'>
                         <p >Visit page</p>
                      </a>
-                     {/* <Arrow /> */}
+                     <a href='//github.com/ludviggrenmo/Covid-tracker/' rel='noopener 
+                                noreferrer' target='_blank'>
+                        <p>Visit
+                           <GitHub />
+                        </p>
+                     </a>
+
                   </InfoLink>
                </InfoWrap>
             </InfoRow>

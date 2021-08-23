@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Button = styled(NavLink)`
-    background: ${({ primary }) => (primary ? '#E9B872' : 'transparent')};
+    background: ${({ primary }) => (primary ? '#FABD38' : 'transparent')};
     white-space: nowrap;
     outline: none;
     border: 1px solid transparent;

@@ -142,6 +142,12 @@ const Image = styled.img`
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 5px solid #FFF;
+    border-radius: 0 12px 12px 0;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 12px;
+    }
 `;
 
 const Skills = () => {
@@ -152,7 +158,7 @@ const Skills = () => {
                <ColumnLeft reverse='false'>
                   <Image src={ImageOne}
                      alt='home'
-                     data-aos='zoom-out'
+                     data-aos='fade-right'
                      data-aos-duration='1500'
                      data-aos-delay='200'
                      data-aos-anchor-placement='top-bottom'
@@ -160,7 +166,7 @@ const Skills = () => {
                </ColumnLeft>
                <ColumnRight reverse='false'>
                   <Content
-                     data-aos='fade-up' ß
+                     data-aos='fade-left'
                      data-aos-duration='1500'
                      data-aos-delay='200'
                      data-aos-anchor-placement='top-bottom'>

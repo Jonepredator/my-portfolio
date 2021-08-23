@@ -13,6 +13,7 @@ const Nav = styled.nav`
     z-index: 100;
     position: fixed;
     width: 100%;
+    
 `;
 
 const NavLinks = css`
@@ -127,8 +128,10 @@ const Navbar = ({ toggle }) => {
 
    let style = {
       backgroundColor: navbar || location.pathname !== '/' ? '#1F6C56' : 'transparent',
-      transition: '1.5s'
+      boxShadow: '0px 12px 13px 2px;',
+      transition: '1.5s',
    };
+
 
    const toggleHome = () => {
       scroll.scrollToTop();

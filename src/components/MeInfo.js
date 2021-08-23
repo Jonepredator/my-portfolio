@@ -75,6 +75,12 @@ const Image = styled.img`
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 5px solid #FFF;
+    border-radius: 12px 0 0 12px;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 12px;
+    }
 `;
 
 const MeInfo = () => {
@@ -95,7 +101,7 @@ const MeInfo = () => {
                <ColumnRight>
                   <Image src={ImageOne}
                      alt='My-Face'
-                     data-aos='zoom-in'
+                     data-aos='fade-left'
                      data-aos-duration='1500'
                      data-aos-anchor-placement='top-bottom'
                   />
