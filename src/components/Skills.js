@@ -1,39 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageOne from '../images/skills-1.png';
+import ProgressBar from './ProgressBar';
 
 const Section = styled.section`
-    /* width: 100%;
-    height: 100%;
-    padding: 4rem 0rem; */
-
-    /* background: #2D7E6B; */
     background: #1F6C56;
     padding: 12rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    /* @media screen and (max-width: 768px) {
-       padding: 3rem 0 1rem 0;
-    } */
 `;
 
 const Container = styled.div`
    background: #fff;
     padding: 3rem 2rem;
     position: relative;
-/* 
-    padding: 3rem calc((100vw - 1300px) /2);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 800px;
-
-    @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 300px;
-      padding: 1rem calc((100vw - 500px) /2);
-    } */
 `;
 
 const Wrap = styled.div`
@@ -48,28 +28,6 @@ const ColumnRight = styled.div`
     justify-content: flex-end;
     padding: 1rem;
     order: ${({ reverse }) => (reverse ? '2' : '1')};
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #FFF;
-    line-height: 1.4;
-    padding: 1rem 2rem;
-    order:
-
-    h1 {
-        margin-bottom: 1rem;
-        font-size: clamp(1.5rem, 6vw, 2rem);
-    }
-
-    p {
-        margin-bottom: 2rem;
-        line-height: 1.5;
-        font-size: 1.1rem;
-        letter-spacing: .05rem;
-        font-weight: 500;
-    } */
 `;
 
 const Content = styled.div`
@@ -115,39 +73,22 @@ const ColumnLeft = styled.div`
     }
 `;
 
-// const ColumnRight = styled.div`
-//     padding: 1rem 2rem;
-//     order: ${({ reverse }) => (reverse ? '1' : '2')};
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+const LeftContainer = styled.div`
+   background-color: #FFF;
+   padding: 3rem 0;
+   display: flex;
+   margin: auto;
+   flex-direction: column;
+   justify-content: space-evenly;
+   height: 100%;
+   width: 100%;
+   border: 5px solid #FFF;
+   border-radius: 0 12px 12px 0;
 
-//     @media screen and (max-width: 768px) {
-//         order: ${({ reverse }) => (reverse ? '2' : '1')};
-//     }
-
-//     img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-
-//         @media screen and (max-width: 768px) {
-//             width: 90%;
-//             height: 90%;
-//         }
-//     }
-// `;
-
-const Image = styled.img`
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border: 5px solid #FFF;
-    border-radius: 0 12px 12px 0;
-
-    @media screen and (max-width: 768px) {
+   @media screen and (max-width: 768px) {
       border-radius: 12px;
-    }
+      padding: 1rem 0;
+   }
 `;
 
 const Skills = () => {
@@ -156,14 +97,22 @@ const Skills = () => {
          <Container>
             <Wrap>
                <ColumnLeft reverse='false'>
-                  <Image src={ImageOne}
-                     alt='home'
+                  <LeftContainer
                      data-aos='fade-right'
                      data-aos-duration='1500'
                      data-aos-delay='200'
                      data-aos-anchor-placement='top-bottom'
-                  />
+                  >
+                     <ProgressBar width={200} percent={0.8} skills={'CSS'} />
+                     <ProgressBar width={200} percent={0.8} skills={'HTML'} />
+                     <ProgressBar width={200} percent={0.5} skills={'JAVASCRIPT'} />
+                     <ProgressBar width={200} percent={0.6} skills={'REACTJS'} />
+                     <ProgressBar width={200} percent={0.9} skills={'PHOTOSHOP'} />
+                     <ProgressBar width={200} percent={1} skills={'FINAL CUT PRO X'} />
+
+                  </LeftContainer>
                </ColumnLeft>
+
                <ColumnRight reverse='false'>
                   <Content
                      data-aos='fade-left'
